@@ -1,0 +1,16 @@
+h1{
+  text-align: center;
+}
+.inscription-list{
+  text-align: center;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  .single-inscription{
+    padding: 25px;
+    border-radius:16px ;
+    background-color: white;
+    width:85% ;
+    margin: 10px auto;
+  }
+}

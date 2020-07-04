@@ -1,0 +1,132 @@
+<app-header></app-header>
+
+
+<div class="inscription">
+  <h1>Inscription</h1>
+<h4>(Inscrivez votre enfant en moins de 5min)</h4>
+  <form class="form" [formGroup]="inscriptionForm" (ngSubmit)="onSubmitForm()">
+
+    <div class="firstline">
+      <div class="step-one">
+        <h2>Informations concernant l'enfant</h2>
+        <p>(Obligatoire)</p>
+        <!-- <div class="kid"> -->
+          <input class="so-input" type="text" formControlName="kidFirstName" placeholder="Prénom(s) de l'enfant">
+          <input class="so-input" type="text" formControlName="kidLastName" placeholder="Nom de L'enfant">
+
+          <div class="date-birthplace">
+            <mat-form-field class="date">
+              <mat-label>Date de naissance</mat-label>
+              <input id="date" matInput type="date" formControlName="kidBirthDate">
+            </mat-form-field>
+            <input type="text" formControlName="kidBirthPlace" placeholder="Lieu de naissance">
+          </div>
+
+           <p>L'enfant passe  en <span style="margin-left:10px ;">
+            <mat-form-field>
+              <mat-label>Choisissez la classe</mat-label>
+              <mat-select disableRipple formControlName="kidGrade">
+                <mat-option selected disabled>Classe</mat-option>
+                <mat-option value="Petite Section" >Petite Section</mat-option>
+                <mat-option value="Moyenne Section" >Moyenne Section</mat-option>
+                <mat-option value="Grande Section" >Grande Section</mat-option>
+                <mat-option value="CI" >CI</mat-option>
+                <mat-option value="CP" >CP</mat-option>
+                <mat-option value="CE1" >CE1</mat-option>
+                <mat-option value="CE2" >CE2</mat-option>
+                <mat-option value="CM1" >CM1</mat-option>
+                <mat-option value="CM2" >CM2</mat-option>
+                <mat-option value="6e" >6e</mat-option>
+              </mat-select>
+            </mat-form-field>
+           </span> </p>
+        <!-- </div> -->
+      </div>
+
+      <div class="step-two">
+        <!-- <div class="transfert"> -->
+          <h2>Informations ne concernant que les nouveaux élèves</h2>
+          <p>(Obligatoire pour les nouveaux)</p>
+
+          <p style="font-weight: 500;">En cas de transfert veuillez indiquer le dernier établissement fréquenté
+          et le motif du transfert</p>
+          <input type="text" formControlName="lastSchool" placeholder="Dernier établissement">
+          <!-- <textarea type="text" formControlName="transfertMotif" placeholder="Motif du transfert"></textarea> -->
+          <input type="text" formControlName="transfertReason" placeholder="Motif du transfert">
+
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+    <div class="step-three">
+
+      <h2>Informations parentales</h2>
+      <p>(Obligatoire)</p>
+      <div class="parents">
+        <input class="st-input" type="text" formControlName="fatherName" placeholder="Prénom(s) & Nom du père">
+        <input class="st-input" type="text" formControlName="fatherProfession" placeholder="Profession du père">
+
+        <mat-form-field>
+          <mat-label>Numéro de téléphone du père</mat-label>
+          <span matPrefix>+(221) &nbsp;</span>
+          <input type="tel" matInput placeholder="77 111 22 33" formControlName="fatherPhoneNumber">
+          <mat-icon matSuffix></mat-icon>
+        </mat-form-field>
+    </div>
+
+    <div class="parents">
+      <input class="st-input" type="text" formControlName="motherName" placeholder="Prénom(s) & Nom de la mère">
+      <input class="st-input" type="text" formControlName="motherProfession" placeholder="Profession de la mère">
+
+      <mat-form-field>
+        <mat-label>Numéro de téléphone de la mère</mat-label>
+        <span matPrefix>+(221) &nbsp;</span>
+        <input type="tel" matInput placeholder="77 111 22 33" formControlName="motherPhoneNumber">
+        <mat-icon matSuffix></mat-icon>
+      </mat-form-field>
+    </div>
+
+  <p>Ou</p>
+
+  <div class="parents">
+    <input class="st-input" type="text" formControlName="tutorName" placeholder="Prénom(s) & Nom du tuteur">
+    <input class="st-input" type="text" formControlName="tutorProfession" placeholder="Profession du tuteur">
+
+    <mat-form-field>
+      <mat-label>Numéro de téléphone du tuteur</mat-label>
+      <span matPrefix>+(221) &nbsp;</span>
+      <input type="tel" matInput placeholder="77 111 22 33" formControlName="tutorPhoneNumber">
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+  </div>
+
+    <div class="living">
+      <p>L'enfant vit il avec avec parents ?</p>
+      <mat-form-field>
+        <mat-label>OUI ou NON</mat-label>
+        <mat-select disableRipple formControlName="living">
+          <!-- <mat-option selected disabled></mat-option> -->
+          <mat-option value="OUI" >OUI</mat-option>
+          <mat-option value="NON" >NON</mat-option>
+
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <p>Les options (transport, cantine, renforcement, arts martiaux) seront spécifiées a la rentrée</p>
+    <p>Le payement se fera via Orange Money</p>
+    </div>
+
+    <div class="button">
+
+      <!-- <button type="submit" [disabled]="inscriptionForm.invalid">Envoyer les informations</button> -->
+
+      <!-- <input type="submit" value="Inscrire" [disabled]="inscriptionForm.invalid"> -->
+
+      <input type="submit" value="Inscrire" [disabled]="inscriptionForm.invalid">
+
+    </div>
+
+  </form>
+</div>

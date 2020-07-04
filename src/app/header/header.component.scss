@@ -1,0 +1,23 @@
+nav{
+  width: 85%;
+  margin: 25px auto;
+  background-color: white;
+  img{
+   position: relative;
+   left: 12.5px;
+   top: 12.5px;
+   width: 60px;
+   height: 60px;
+  }
+  .nav-links{
+    text-align: end;
+    position: relative;
+    bottom:30px;
+    margin-right: 20px;
+    a{
+      margin: 0 15px;
+      color: rgb(131, 127, 127);
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.inscription{
+  background-color: #318176;
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 24px;
+  h1{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  form{
+    h3{
+      text-align: center;
+    }
+    .firstline{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .step-one{
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 24px;
+        text-align: center;
+        input[type = "text"]{
+          border: 0;
+          background: none;
+          display: block;
+          margin: 15px auto;
+          text-align: center;
+          border: 2px solid ;
+          border-color: #318176;
+          padding: 8px;
+          width: 130px;
+          outline: none;
+          color: rgb(126, 120, 120);
+          border-radius: 24px;
+          transition: 1s;
+          &:focus{
+            width: 160px;
+            border-color: #0AFBC3;
+          }
+        }
+      }
+      .step-two{
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 24px;
+        text-align: center;
+        input[type = "text"]{
+          border: 0;
+          background: none;
+          display: block;
+          margin: 15px auto;
+          text-align: center;
+          border: 2px solid ;
+          border-color: #318176;
+          padding: 8px;
+          width: 130px;
+          outline: none;
+          color: rgb(126, 120, 120);
+          border-radius: 24px;
+          transition: 1s;
+          &:focus{
+            width: 160px;
+            border-color: #0AFBC3;
+          }
+        }
+      }
+    }
+    .step-three{
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      margin-top: 25px;
+      border-radius: 24px;
+      input[type = "text"]{
+        border: 0;
+        background: none;
+        display: inline-block;
+        margin: 5px 20px;
+        text-align: center;
+        border: 2px solid ;
+        border-color: #318176;
+        padding: 8px;
+        width: 175px;
+        outline: none;
+        color: rgb(126, 120, 120);
+        border-radius: 24px;
+        transition: 1s;
+        &:focus{
+          width: 160px;
+          border-color: #0AFBC3;
+        }
+      }
+      .st-input{
+        margin: 10px;
+      }
+    }
+    .button{
+      text-align: center;
+      input[type = "submit"]{
+        border: 0;
+        background: white;
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+        border: 1px solid ;
+        border-color: #0AFBC3;
+        padding: 8px;
+        width: 200px;
+        outline: none;
+        color: rgb(126, 120, 120);
+        border-radius: 24px;
+        transition: 1s;
+        // &:hover{
+        //   width: 250px;
+        //   background-color: rgb(245, 194, 194);
+        // }
+      }
+    }
+  }
+}

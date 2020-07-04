@@ -1,0 +1,47 @@
+<h1>Liste des inscriptions</h1>
+
+<div class="inscription-list">
+
+  <div class="single-inscription" *ngFor="let inscription of inscriptions">
+
+    <h1>Une nouvelle inscription</h1>
+
+    <h2> {{ inscription.kidFirstName }}  {{ inscription.kidLastName }}</h2>
+
+    <h3>  {{ inscription.kidFirstName }}  {{ inscription.kidLastName }} est ne le :
+      {{ inscription.kidBirthDate }}  a {{ inscription.kidBirthPlace }} </h3>
+
+    <p> Passe en <span style="font-weight: 600;">{{ inscription.kidGrade }}</span> </p>
+
+    <p *ngIf="inscription.fatherName"> Le prénom de son père : {{ inscription.fatherName }} </p>
+    <p *ngIf="inscription.fatherProfession"> La profession de son père : {{ inscription.fatherProfession }} </p>
+    <p *ngIf="inscription.fatherPhoneNumber"> Le numero de téléphone de son père : {{ inscription.fatherPhoneNumber }} </p>
+    <p *ngIf="inscription.motherName"> Le prénom de sa mère : {{ inscription.motherName }} </p>
+    <p *ngIf="inscription.motherProfession"> La profession de sa mère : {{ inscription.motherProfession }} </p>
+    <p *ngIf="inscription.motherPhoneNumber"> Le numéro de téléphone de sa mère : {{ inscription.motherPhoneNumber }} </p>
+    <p *ngIf="inscription.tutorName"> Le prénom de son tuteur : {{ inscription.tutorName }} </p>
+    <p *ngIf="inscription.tutorProfession"> La profession de son tuteur : {{ inscription.tutorProfession }} </p>
+    <p *ngIf="inscription.tutorPhoneNumber"> Le numéro de téléphone de son tuteur : {{ inscription.tutorPhoneNumber }} </p>
+    <p *ngIf="inscription.lastSchool"> Le dernier établissement fréquente est : {{ inscription.lastSchool }} </p>
+    <p *ngIf="inscription.transfertReason"> La raison tu transfert est {{ inscription.transfertReason }} </p>
+    <p *ngIf="inscription.living==='OUI'">  {{ inscription.living }} L'enfant vie avec ses parents</p>
+    <p *ngIf="inscription.living==='NON'">  {{ inscription.living }} L'enfant ne vie pas avec ses parents</p>
+
+    <h1>Informations non specifiés</h1>
+
+       <p *ngIf="!inscription.fatherName">Le nom du père est n'est pas spécifié</p>
+       <p *ngIf="!inscription.fatherProfession">La profession du père n'est pas spécifiée</p>
+       <p *ngIf="!inscription.fatherPhoneNumber">Le numéro de téléphone du père n'est pas spécifié</p>
+       <p *ngIf="!inscription.motherName">Le nom de la mère n'est pas spécifié</p>
+       <p *ngIf="!inscription.motherProfession">La profession de la mère n'est pas spécifiée</p>
+       <p *ngIf="!inscription.motherPhoneNumber">Le numéro de la mère est n'est pas spécifié</p>
+       <p *ngIf="!inscription.tutorName">Le nom du tuteur est n'est pas spécifié</p>
+       <p *ngIf="!inscription.tutorProfession">La profession du tuteur n'est pas spécifiée</p>
+       <p *ngIf="!inscription.tutorPhoneNumber">Le numéro du tuteur est n'est pas spécifié</p>
+       <p *ngIf="!inscription.lastSchool">La dernière école est n'est pas spécifiée</p>
+       <p *ngIf="!inscription.transfertReason">La raison du transfert est n'est pas spécifiée</p>
+       <p *ngIf="!inscription.living">L'enfant habite avec qui ?: n'est pas spécifié</p>
+
+  </div>
+
+</div>
