@@ -1,7 +1,7 @@
 .inscription{
   background-color: #318176;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 25px;
   border-radius: 24px;
   h1{
@@ -93,7 +93,7 @@
         border-radius: 24px;
         transition: 1s;
         &:focus{
-          width: 160px;
+          width: 190px;
           border-color: #0AFBC3;
         }
       }
@@ -117,11 +117,110 @@
         color: rgb(126, 120, 120);
         border-radius: 24px;
         transition: 1s;
-        // &:hover{
-        //   width: 250px;
-        //   background-color: rgb(245, 194, 194);
-        // }
+
       }
     }
   }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .inscription{
+    form{
+      .firstline{
+        grid-template-columns: 1fr;
+        .step-one{
+
+        }
+        .step-two{
+         margin: 20px auto;
+        }
+      }
+      .step-three{
+
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .inscription{
+    form{
+      .firstline{
+        grid-template-columns: 1fr;
+        .step-one{
+          margin: 20px auto;
+        }
+        .step-two{
+          margin: 20px auto;
+        }
+      }
+      .step-three{
+        margin: 10px auto;
+      }
+    }
+  }
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .inscription{
+    form{
+      .firstline{
+        grid-template-columns: 1fr;
+        .step-one{
+          margin: 20px auto;
+        }
+        .step-two{
+          margin: 20px auto;
+        }
+      }
+      .step-three{
+        margin: 10px auto;
+      }
+    }
+  }
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1281px)  {
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 320px) {
+  .inscription{
+    form{
+      .firstline{
+        grid-template-columns: 1fr;
+        .step-one{
+          margin: 20px auto;
+        }
+        .step-two{
+          margin: 20px auto;
+        }
+      }
+      .step-three{
+        margin: 10px auto;
+      }
+    }
+  }
+
 }

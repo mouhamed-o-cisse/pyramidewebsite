@@ -1,4 +1,3 @@
-// import { Inscription } from '../models/inscription.model';
 import { Subject } from 'rxjs/Subject';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';

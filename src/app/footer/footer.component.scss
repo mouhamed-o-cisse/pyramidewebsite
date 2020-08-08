@@ -1,0 +1,30 @@
+.footer{
+  padding: 30px;
+  background-color: #318176;
+  h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .links{
+    display: grid;
+    grid-template-columns:  1fr;
+    .link{
+     ul{
+       list-style: none;
+       li{
+        margin: 15px 0;
+         a{
+           text-decoration: none;
+           color: rgb(255, 255, 255);
+
+         }
+       }
+     }
+    }
+  }
+  p{
+    text-align: end;
+    margin-top: 15px;
+    color: white;
+  }
+}

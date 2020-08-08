@@ -1,23 +1,105 @@
-nav{
-  width: 85%;
-  margin: 25px auto;
-  background-color: white;
-  img{
-   position: relative;
-   left: 12.5px;
-   top: 12.5px;
-   width: 60px;
-   height: 60px;
-  }
-  .nav-links{
-    text-align: end;
-    position: relative;
-    bottom:30px;
-    margin-right: 20px;
-    a{
-      margin: 0 15px;
-      color: rgb(131, 127, 127);
-      text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.sheader{
+  // position: fixed;
+  // width: 100%;
+  // margin-bottom: 20px;
+  // overflow: hidden;
+  .sidenav-container {
+    height: 100%;
+    overflow: visible;
+    .sidenav {
+      width: 100%;
+      // height: 50%;
+      .mat-toolbar {
+        background: inherit;
+        .mat-primary  {
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+      }
+      .clear-button{
+        background-color:rgb(94, 209, 161);
+        text-align: end;
+      }
+      .nav-list{
+       a{
+         font-size: 16px;
+       }
+      }
     }
+  }
+  .mat-drawer-container{ overflow: visible; }
+  .mat-drawer-container{
+    position: unset!important;
+  }
+}
+
+
+.bheader{
+  nav{
+    width: 85%;
+    margin: 25px auto;
+    background-color: white;
+    img{
+     position: relative;
+     left: 12.5px;
+     top: 12.5px;
+     width: 60px;
+     height: 60px;
+    }
+    .nav-links{
+      text-align: end;
+      position: relative;
+      bottom:30px;
+      margin-right: 20px;
+      a{
+        margin: 0 15px;
+        color: rgb(131, 127, 127);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sheader{
+    display: none;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .bheader{
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .bheader{
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .sheader{
+    display: none;
+  }
+}
+
+@media (min-width: 1281px)  {
+  .sheader{
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .bheader{
+    display: none;
   }
 }

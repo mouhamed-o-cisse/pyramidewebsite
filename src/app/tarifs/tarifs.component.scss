@@ -1,0 +1,59 @@
+h1{
+  text-align: center;
+  color: rgb(122, 120, 120);
+  background-color: white;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.tables{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 35px;
+  border-radius: 16px;
+  .table{
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tables{
+    grid-template-columns: 1fr 1fr;//
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .tables{
+    grid-template-columns: 1fr 1fr;//
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .tables{
+    width: 70%; //
+    grid-template-columns: 1fr;//
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 320px) {
+  h1{
+    font-size: 25px;//
+  }
+  .tables{
+    width: 70%; //
+    grid-template-columns: 1fr;//
+  }
+}

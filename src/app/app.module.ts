@@ -7,10 +7,15 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 import { MatStepperModule, MatStepperIntl } from '@angular/material/stepper';
-// import { MyIntl } from '@angular/material/';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,8 +27,15 @@ import { InscriptionListeComponent } from './inscription-liste/inscription-liste
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { Inscription } from './models/inscription.model';
 import { AdministrationComponent } from './administration/administration.component';
+import { TarifsComponent } from './tarifs/tarifs.component';
+import { DossiersAFournirComponent } from './dossiers-a-fournir/dossiers-a-fournir.component';
+import { ApeComponent } from './ape/ape.component';
+import { ElementaireComponent } from './elementaire/elementaire.component';
+import { PrescolaireComponent } from './prescolaire/prescolaire.component';
+import { OptionComponent } from './option/option.component';
+import { AfterInscriptionComponent } from './after-inscription/after-inscription.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes : Routes =[ // all routes
   {
@@ -35,6 +47,30 @@ const appRoutes : Routes =[ // all routes
   {
     path:'inscription-liste', component:  InscriptionListeComponent
   },
+  {
+    path:'ape', component:  ApeComponent
+  },
+  {
+    path:'tarifs', component:  TarifsComponent
+  },
+  {
+    path:'option', component:  OptionComponent
+  },
+  {
+    path:'contact', component:  ContactComponent
+  },
+  {
+    path:'ai', component:  AfterInscriptionComponent
+  },
+  {
+    path:'pyradmin', component:  AdministrationComponent
+  },
+  {
+    path:'dossiers-a-fournir', component:  DossiersAFournirComponent
+  },
+  // {
+  //   path:'a', component:  AdministrationComponent
+  // },
   // Never forget these one bellow
 {
     path: '', component: AccueilComponent
@@ -55,7 +91,15 @@ const appRoutes : Routes =[ // all routes
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    AdministrationComponent
+    AdministrationComponent,
+    TarifsComponent,
+    DossiersAFournirComponent,
+    ApeComponent,
+    ElementaireComponent,
+    PrescolaireComponent,
+    OptionComponent,
+    AfterInscriptionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -64,11 +108,15 @@ const appRoutes : Routes =[ // all routes
     ReactiveFormsModule,
     HttpClientModule,
     MatInputModule,
+    MatToolbarModule,
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
+    MatListModule,
+    MatSidenavModule,
     MatStepperModule,
+    MatTableModule,
     MatExpansionModule,
     BrowserAnimationsModule
   ],

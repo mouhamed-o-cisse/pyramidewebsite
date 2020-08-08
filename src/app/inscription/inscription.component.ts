@@ -66,7 +66,7 @@ export class InscriptionComponent implements OnInit {
       formValue['living']
     );
     this.inscriptionService.addInscription(newInscription);
-    this.router.navigate(['/accueil']);
+    this.router.navigate(['/ai']);
   }
 
 }

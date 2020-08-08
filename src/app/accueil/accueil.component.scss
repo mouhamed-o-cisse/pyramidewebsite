@@ -20,11 +20,28 @@ main{
       color: rgb(116, 108, 108);
     }
   }
+  .utilites{
+    width: 40%;
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    margin: 75px auto;
+    border-radius: 16px;
+        a{
+          text-decoration: none;
+          margin: 0 30px;
+          color: rgb(122, 113, 113);
+          font-size: 18px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+  }
   .utilities{
     width: 80%;
     margin: 35px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     .utility{
       width: 80%;
@@ -39,7 +56,6 @@ main{
         padding: 10px;
         a{
           text-decoration: underline;
-
         }
       }
       a{
@@ -56,6 +72,141 @@ main{
     border-radius: 16px ;
     h1{
       text-align: center;
+    }
+    h2{
+      text-align: end;
+    }
+    p{
+      text-align: justify;
+      line-height: 25px;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1281px)  {
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 481px) and (max-width: 767px) {
+  main{
+    .hello{
+      width: 80%;//
+      margin: 20px auto;//
+      h1{
+        font-size: 24px; //
+      }
+    }
+    .utilites{
+      background: none;  //
+      text-align: center;//
+      margin: 20px auto;//
+          a{
+            text-align: center; //
+            margin: 0 auto; //
+            line-height: 50px;//
+            background-color: white; //
+            padding: 10px; //
+            color: rgb(122, 113, 113);
+            font-size: 15px; //
+            border-radius: 6px; //
+
+          }
+    }
+    .utilities{
+      margin: 15px auto;//
+      grid-template-columns: 1fr; //
+      .utility{
+        margin: 15px auto; //
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+  main{
+    .hello{
+      width: 80%;//
+      margin: 20px auto;//
+      h1{
+        font-size: 24px; //
+      }
+    }
+    .utilites{
+      background: none;  //
+      text-align: center;//
+      margin: 20px auto;//
+          a{
+            text-align: center; //
+            margin: 0 auto; //
+            line-height: 50px;//
+            background-color: white; //
+            padding: 10px; //
+            color: rgb(122, 113, 113);
+            font-size: 15px; //
+            border-radius: 6px; //
+
+          }
+    }
+    .utilities{
+      margin: 15px auto;//
+      grid-template-columns: 1fr; //
+      .utility{
+        margin: 15px auto; //
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 320px) {
+  main{
+    .hello{
+      width: 70%;//
+      margin: 20px auto;//
+      h1{
+        font-size: 20px; //
+      }
+    }
+    .utilites{
+      background: none;  //
+      text-align: center;//
+      margin: 12px auto;//
+          a{
+            text-align: center; //
+            margin: 0 auto; //
+            line-height: 50px;//
+            background-color: white; //
+            padding: 10px; //
+            color: rgb(122, 113, 113);
+            font-size: 11px; //
+            border-radius: 6px; //
+
+          }
+    }
+    .utilities{
+      margin: 15px auto;
+      grid-template-columns: 1fr; //
+      .utility{
+        margin: 10px auto; //
+      }
     }
   }
 }

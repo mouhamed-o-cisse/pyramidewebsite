@@ -1,0 +1,81 @@
+h1{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+.elements{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin: 50px auto;
+  .element{
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+
+
+@media (min-width: 1281px)  {
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h1{
+
+    padding: 18px;//
+  }
+  .elements{
+
+    grid-template-columns: 1fr  ;//
+    .element{
+      margin: 20px auto;//
+
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1{
+
+    padding: 18px;//
+  }
+  .elements{
+
+    grid-template-columns: 1fr  ;//
+    .element{
+      margin: 20px auto;//
+
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 320px) {
+  h1{
+    padding: 18px;//
+  }
+  .elements{
+    grid-template-columns: 1fr  ;//
+    .element{
+      margin: 20px auto;//
+    }
+  }
+}
