@@ -1,0 +1,96 @@
+.whole{
+  margin: 20px auto;
+  width: 90%;
+  h1{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  .links{
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    width: 40%;
+    margin: 10px auto;
+    // h4{}
+    ul{
+      list-style: none;
+      li{
+        a{
+          text-decoration: none;
+          color: rgb(94, 87, 87);
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .whole{
+    .links{
+      width: 80%; //
+      ul{
+        li{
+          a{
+            line-height: 35px;//
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .whole{
+    .links{
+      width: 80%; //
+      ul{
+        li{
+          a{
+            line-height: 35px;//
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .sheader{
+    display: none;
+  }
+}
+
+@media (min-width: 1281px)  {
+  .whole{
+    .links{
+      width: 80%; //
+      ul{
+        li{
+          a{
+            line-height: 35px;//
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .bheader{
+    display: none;
+  }
+}
